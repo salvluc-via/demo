@@ -4,9 +4,14 @@ public class ExerciciosWhile extends Object{
 
 	public static void main(String[] args) {
 
+		int valorNumerico = 0;
+
+		while(0 < 10){
+			valorNumerico++;
+			System.out.println("Seu valor");
+		}
 
 	}
-
 
 }
 

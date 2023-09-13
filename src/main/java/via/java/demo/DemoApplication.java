@@ -1,20 +1,22 @@
 package via.java.demo;
 
+import via.java.demo.dia.dois.Cachorro;
+
 public class DemoApplication extends Object{
 
 	public static void main(String[] args) {
 
-//		olaMundo();
-//
-//		variaveis();
-//
-//		// Sintaxe
-//
-//		ifElse();
-//
-//		operadoresAritmeticosEAtribuicao();
-//
-//		operadoresComparacacaoELogicos();
+		olaMundo();
+
+		variaveis();
+
+		// Sintaxe
+
+		ifElse();
+
+		operadoresAritmeticosEAtribuicao();
+
+		operadoresComparacacaoELogicos();
 
 		loops();
 
@@ -148,6 +150,9 @@ public class DemoApplication extends Object{
 	}
 
 	private static void variaveis() {
+
+		Cachorro cachorro = new Cachorro();
+		cachorro.cor = "";
 		// Variaveis
 
 		// Numeros
