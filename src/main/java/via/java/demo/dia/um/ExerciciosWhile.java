@@ -1,4 +1,4 @@
-package via.java.demo;
+package via.java.demo.dia.um;
 
 public class ExerciciosWhile extends Object{
 

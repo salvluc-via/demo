@@ -1,4 +1,4 @@
-package via.java.demo;
+package via.java.demo.dia.um;
 
 import via.java.demo.dia.dois.Cachorro;
 
@@ -151,8 +151,8 @@ public class DemoApplication extends Object{
 
 	private static void variaveis() {
 
-		Cachorro cachorro = new Cachorro();
-		cachorro.cor = "";
+//		Cachorro cachorro = new Cachorro();
+//		cachorro.cor = "";
 		// Variaveis
 
 		// Numeros

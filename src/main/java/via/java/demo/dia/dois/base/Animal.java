@@ -1,6 +1,6 @@
-package via.java.demo.dia.dois;
+package via.java.demo.dia.dois.base;
 // Todo objeto é um substantivo
-public class Cachorro { // Toda classe segue o padrão PascalCase
+public class Animal { // Toda classe segue o padrão PascalCase
 
     // Caracteristicas
 
@@ -8,34 +8,18 @@ public class Cachorro { // Toda classe segue o padrão PascalCase
     private String raça;
     private String nome;
     private int idade;
-    private String dataAniversario;
-    private float velocidade;
+    private String dataNascimento;
     private boolean precisaCuidadoEspecial;
 
-    public Cachorro(String nome, String cor, String raça, int idade, float velocidade) {
+    public Animal(String nome, String cor, String raça, int idade) {
         this.setNome(nome);
         this.cor = cor;
         this.raça = raça;
         this.idade = idade;
-        this.velocidade = velocidade;
     }
 
     // O contrutor sem argumentos é implicito até que você crie seu proprio construtor
-    public Cachorro(){}
-
-    // Ações / Verbos
-
-    public void late() { // Toda variável e método segue o padrão camelCase (casoCamelo)
-        System.out.println("Au au Au au Au au Au au Au au");
-    }
-
-    public void corre() {
-        if(idade <= 15){
-            System.out.println("Corre: " + this.velocidade + " m/s" );
-        }
-        else
-            System.out.println("Corre: 0.5 m/s" );
-    }
+    public Animal(){}
 
     public String getNome() {
         return nome;
@@ -43,9 +27,49 @@ public class Cachorro { // Toda classe segue o padrão PascalCase
 
     public void setNome(String nome) {
         if(nome.isBlank()){
-            this.nome = "Cachorro";
+            this.nome = "Animal";
         } else {
             this.nome = nome;
         }
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public String getRaça() {
+        return raça;
+    }
+
+    public void setRaça(String raça) {
+        this.raça = raça;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(String dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+    public boolean isPrecisaCuidadoEspecial() {
+        return precisaCuidadoEspecial;
+    }
+
+    public void setPrecisaCuidadoEspecial(boolean precisaCuidadoEspecial) {
+        this.precisaCuidadoEspecial = precisaCuidadoEspecial;
     }
 }

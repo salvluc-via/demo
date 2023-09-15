@@ -1,8 +1,9 @@
-package via.java.demo;
+package via.java.demo.dia.um;
 
 public class ExerciciosFor extends Object{
 
 	public static void main(String[] args) {
+
 
 
 	}

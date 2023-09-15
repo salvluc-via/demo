@@ -1,20 +1,23 @@
 package via.java.demo.dia.dois;
 
 import via.java.demo.dia.dois.base.Animal;
+import via.java.demo.dia.dois.base.Pet;
 
 // Todo objeto é um substantivo
-public class Cachorro extends Animal { // Toda classe segue o padrão PascalCase
+public class Cachorro extends Pet { // Toda classe segue o padrão PascalCase
 
     // Caracteristicas
     private float velocidade;
 
     public Cachorro(String nome, String cor, String raça, int idade, float velocidade) {
-        super(nome, cor, raça, idade);
+        super(nome, cor, raça, idade, "Cachorro");
         this.velocidade = velocidade;
     }
 
-    // O contrutor sem argumentos é implicito até que você crie seu proprio construtor
-    public Cachorro(){}
+    public Cachorro(String nome, String cor, String raça, int idade, float velocidade, String apelido) {
+        super(nome, cor, raça, idade, apelido);
+        this.velocidade = velocidade;
+    }
 
     // Ações / Verbos
 
