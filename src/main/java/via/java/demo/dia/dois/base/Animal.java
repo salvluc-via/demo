@@ -1,15 +1,22 @@
 package via.java.demo.dia.dois;
-
-import via.java.demo.dia.dois.base.Animal;
-
 // Todo objeto é um substantivo
-public class Cachorro extends Animal { // Toda classe segue o padrão PascalCase
+public class Cachorro { // Toda classe segue o padrão PascalCase
 
     // Caracteristicas
+
+    public String cor; // Toda variável e método segue o padrão camelCase (casoCamelo)
+    private String raça;
+    private String nome;
+    private int idade;
+    private String dataAniversario;
     private float velocidade;
+    private boolean precisaCuidadoEspecial;
 
     public Cachorro(String nome, String cor, String raça, int idade, float velocidade) {
-        super(nome, cor, raça, idade);
+        this.setNome(nome);
+        this.cor = cor;
+        this.raça = raça;
+        this.idade = idade;
         this.velocidade = velocidade;
     }
 
@@ -23,19 +30,22 @@ public class Cachorro extends Animal { // Toda classe segue o padrão PascalCase
     }
 
     public void corre() {
-        if(getIdade() <= 15){
+        if(idade <= 15){
             System.out.println("Corre: " + this.velocidade + " m/s" );
         }
         else
             System.out.println("Corre: 0.5 m/s" );
     }
 
-    @Override
+    public String getNome() {
+        return nome;
+    }
+
     public void setNome(String nome) {
         if(nome.isBlank()){
-            super.setNome("Cachorro");
+            this.nome = "Cachorro";
         } else {
-            super.setNome(nome);
+            this.nome = nome;
         }
     }
 }
