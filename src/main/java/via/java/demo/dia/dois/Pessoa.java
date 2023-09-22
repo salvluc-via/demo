@@ -1,6 +1,7 @@
 package via.java.demo.dia.dois;
 
 import via.java.demo.dia.dois.base.Animal;
+import via.java.demo.dia.dois.base.AnimalComCauda;
 import via.java.demo.dia.dois.base.Pet;
 
 public class Pessoa {
@@ -55,9 +56,12 @@ public class Pessoa {
         System.out.println("Vem " + animal.getNome());
     }
 
-
     protected static void chamarPetPeloApelido(Pet pet) {
         System.out.println("Vem " + pet.getApelido());
+    }
+
+    protected static void brincarComAnimal(AnimalComCauda animalComCauda) {
+        animalComCauda.moverCauda();
     }
 
 

@@ -4,27 +4,22 @@ import via.java.demo.dia.dois.base.AnimalComCauda;
 import via.java.demo.dia.dois.base.Pet;
 
 // Todo objeto é um substantivo
-public class Cachorro extends Pet implements AnimalComCauda { // Toda classe segue o padrão PascalCase
+public class Gato extends Pet implements AnimalComCauda { // Toda classe segue o padrão PascalCase
 
     // Caracteristicas
     private float velocidade;
 
-    public Cachorro(String nome, String cor, String raça, int idade, float velocidade) {
-        super(nome, cor, raça, idade, "Cachorro");
+    public Gato(String nome, String cor, String raça, int idade, float velocidade) {
+        super(nome, cor, raça, idade, "Gato");
         this.velocidade = velocidade;
     }
 
-    public Cachorro(String nome, String cor, String raça, int idade, float velocidade, String apelido) {
+    public Gato(String nome, String cor, String raça, int idade, float velocidade, String apelido) {
         super(nome, cor, raça, idade, apelido);
         this.velocidade = velocidade;
     }
 
     // Ações / Verbos
-
-    public void late() { // Toda variável e método segue o padrão camelCase (casoCamelo)
-        System.out.println("Au au Au au Au au Au au Au au");
-    }
-
     public void corre() {
         if(getIdade() <= 15){
             System.out.println("Corre: " + this.velocidade + " m/s" );
@@ -36,7 +31,7 @@ public class Cachorro extends Pet implements AnimalComCauda { // Toda classe seg
     @Override
     public void setNome(String nome) {
         if(nome.isBlank()){
-            super.setNome("Cachorro");
+            super.setNome("Gato");
         } else {
             super.setNome(nome);
         }
@@ -44,6 +39,6 @@ public class Cachorro extends Pet implements AnimalComCauda { // Toda classe seg
 
     @Override
     public void moverCauda() {
-        System.out.println("Balança cauda de um lado para o outro");
+        System.out.println("Levanta a cauda");
     }
 }
