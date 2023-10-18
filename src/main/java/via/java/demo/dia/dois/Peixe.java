@@ -27,6 +27,6 @@ public class Peixe extends Animal implements AnimalComCauda { // Toda classe seg
 
     @Override
     public void moverCauda() {
-        System.out.println("Balança o rabo");
+        System.out.println("Nada");
     }
 }

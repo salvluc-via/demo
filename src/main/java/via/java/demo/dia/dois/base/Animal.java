@@ -27,7 +27,7 @@ public class Animal { // Toda classe segue o padrão PascalCase
 
     public void setNome(String nome) {
         if(nome.isBlank()){
-            this.nome = "Animal";
+            this.nome = "Blublub";
         } else {
             this.nome = nome;
         }
